@@ -1,15 +1,3 @@
-// var boolean = false;
-// if(boolean){
-// console.log("trueの処理");
-// console.log(boolean);
-// } else {
-// console.log("falseの処理");
-// console.log(boolean);
-// };
-
-
-
-
 
 // ----------------------------------------------
 // 問題：elseを使用する時の注意点
