@@ -1,17 +1,3 @@
-// var boolean = true;
-// var resultText = "";
-// if (boolean) {
-// resultText = "Aの処理"
-// } else {
-// resultText = "Bの処理"
-// };
-// console.log(resultText);
-
-// var resultText = boolean ? "Aの処理" : "Bの処理";
-// console.log(resultText)
-
-// var resultNum = 5 > 2 ? true : false;
-// console.log(resultNum)
 
 
 // 1. 変数の中にtrueまたは、falseが代入された時の処理を作ってください。
