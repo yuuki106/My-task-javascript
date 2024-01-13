@@ -23,5 +23,5 @@ console.log(checkNum3);
 
 // 5. 代入された変数の中に値が存在する場合はtrue、存在しない場合はfalseの処理にしてください。
 var value = "";
-var checkValue = (value=null) ? "値が存在します。": "値が存在しません。";
+var checkValue = (value === null) ? "値が存在しません": "値が存在します。";
 console.log(checkValue);
