@@ -22,6 +22,6 @@ var checkNum3 = num3 >= 10 ? "num3は10以上です。": "num3は10より小さ�
 console.log(checkNum3);
 
 // 5. 代入された変数の中に値が存在する場合はtrue、存在しない場合はfalseの処理にしてください。
-var value = null;
-var checkValue = (value) ? "値が存在します。": "値が存在しません。";
+var value = "";
+var checkValue = (value=null) ? "値が存在します。": "値が存在しません。";
 console.log(checkValue);
