@@ -14,7 +14,7 @@ console.log(animals[2]);
 var mycat = {
   name: "小豆",
   kind: "ブリティッシュ・ショートヘア",
-  age: "1",
+  age: 1,
 }
 
 console.log(mycat);
@@ -26,17 +26,17 @@ var cats = [
   {
     name: "小豆",
     kind: "ブリティッシュ・ショートヘア",
-    age: "1",
+    age: 1,
   },
   {
     name:"せんべい",
     kind:"アメリカンカール",
-    age:"2",
+    age:2,
   },
   {
     name:"ところてん",
     kind:"マンチカン",
-    age:"5",
+    age:5,
   }
 ]
 console.log(cats[0]);
