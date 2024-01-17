@@ -4,13 +4,13 @@
 
 const greet = {
   morning: function () {
-    console.log("おはようございます。")
+    console.log("おはようございます。");
   },
   afternoon: function () {
-    console.log("こんにちは。")
+    console.log("こんにちは。");
   },
   night: function () {
-    console.log("こんばんは。")
+    console.log("こんばんは。");
   }
 }
 // greet.morning();
@@ -27,7 +27,7 @@ function fruit(name, price) {
   const result = name + "の値段は" + price + "円です。"
   return result
 };
-console.log(fruit("りんご", 200))
+console.log(fruit("りんご", 200));
 
 // ----------------------------------------------------------------------
 // ----------------------------------------------------------------------
@@ -44,13 +44,13 @@ function addTax(price, func) {
   return
 }
 
-// console.log(addTax(100));
+
 // トマトの税込み価格をコンソールに表示させる処理
 function taxInTomato(price){
   console.log( (`トマトの税込価格は${price}円です。`));
 }
-
 // addTax(100,taxInTomato);
+
 // 玉ねぎの税込み価格をコンソールに表示させる処理
 function taxInOnion(price){
   console.log( (`玉ねぎの税込価格は${price}円です。`));
