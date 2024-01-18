@@ -40,7 +40,7 @@ function addTax(price, func, name) {
   // funcは実行する関数名
   // 税込み価格を計算して四捨五入して整数にしている(スコープ内でしか参照できません。)
   const taxPrice = Math.round(price * 1.10);
-  func(name,taxPrice)
+  func(name,taxPrice);
   return
 }
 
