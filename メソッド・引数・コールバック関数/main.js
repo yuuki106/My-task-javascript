@@ -35,27 +35,25 @@ console.log(fruit("りんご", 200));
 
 // 3.下記の関数を経由して2つの関数を実行するような処理を作ってください。
 
-function addTax(price, func) {
+function addTax(price, func, name) {
   // priceは値段
   // funcは実行する関数名
   // 税込み価格を計算して四捨五入して整数にしている(スコープ内でしか参照できません。)
   const taxPrice = Math.round(price * 1.10);
-  const name = func();
-  console.log(`${name}の税込価格は${taxPrice}円です。`)
+  func(name,taxPrice)
   return
 }
 
-function taxInTomato(){
-  return "トマト"
+function showTaxIn(name,taxPrice) {
+  console.log(`${name}の税込価格は${taxPrice}円です。`);
+  return
 }
 
-function taxInOnion(){
-  return "玉ねぎ"
-}
+
 
 
 // トマトの税込み価格をコンソールに表示させる処理
-addTax(100,taxInTomato);
+addTax(100, showTaxIn, "トマト")
 
 // 玉ねぎの税込み価格をコンソールに表示させる処理
-addTax(200,taxInOnion);
+addTax(300, showTaxIn, "玉ねぎ")
