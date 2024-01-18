@@ -13,9 +13,9 @@ const greet = {
     console.log("こんばんは。");
   }
 }
-// greet.morning();
-// greet.afternoon();
-// greet.night();
+// greet.morning()
+// greet.afternoon()
+// greet.night()
 
 // ----------------------------------------------------------------------
 // ----------------------------------------------------------------------
@@ -40,19 +40,22 @@ function addTax(price, func) {
   // funcは実行する関数名
   // 税込み価格を計算して四捨五入して整数にしている(スコープ内でしか参照できません。)
   const taxPrice = Math.round(price * 1.10);
-  func(taxPrice)
+  const name = func();
+  console.log(`${name}の税込価格は${taxPrice}円です。`)
   return
+}
+
+function taxInTomato(){
+  return "トマト"
+}
+
+function taxInOnion(){
+  return "玉ねぎ"
 }
 
 
 // トマトの税込み価格をコンソールに表示させる処理
-function taxInTomato(price){
-  console.log( (`トマトの税込価格は${price}円です。`));
-}
-// addTax(100,taxInTomato);
+addTax(100,taxInTomato);
 
 // 玉ねぎの税込み価格をコンソールに表示させる処理
-function taxInOnion(price){
-  console.log( (`玉ねぎの税込価格は${price}円です。`));
-}
-// addTax(200,taxInOnion);
+addTax(200,taxInOnion);
