@@ -53,7 +53,7 @@ function showTaxIn(name,taxPrice) {
 
 
 // トマトの税込み価格をコンソールに表示させる処理
-addTax(100, showTaxIn, "トマト")
+addTax(100, showTaxIn, "トマト");
 
 // 玉ねぎの税込み価格をコンソールに表示させる処理
-addTax(300, showTaxIn, "玉ねぎ")
+addTax(300, showTaxIn, "玉ねぎ");
